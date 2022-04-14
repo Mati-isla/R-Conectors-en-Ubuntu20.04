@@ -1,0 +1,32 @@
+Procedemos a instalar dependencias para instalar R , instalamos dependencias HTTPS
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+
+Agregamosel repositorio CRAN a la lista de fuentes de su sistema
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+
+instalamos R-base
+sudo apt install r-base
+
+Verificamos version
+R --version
+
+Ejemplo instalación de build-esential
+sudo apt install build-essential
+
+entramos a R
+
+R
+
+Instalamos paquete 
+install.packages("stringr")
+
+Instalamos librerias
+library(stringr)
+
+
+tutorial <- c("Instalando", "R", "en", "Ubuntu", "20.04")
+
+llamamos la funcion length para contar las letras
+str_length(tutorial)
